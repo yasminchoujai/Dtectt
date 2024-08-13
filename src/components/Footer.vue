@@ -70,6 +70,7 @@ export default {
   padding: 40px 20px;
   font-family: Arial, sans-serif;
   width: 100vw;
+  text-align: left;
 }
 
 .footer-content {

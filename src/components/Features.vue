@@ -111,6 +111,7 @@ export default {
   padding: 60px 20px;
   margin-left: 30px;
   margin-right: 30px;
+  text-align: left;
 }
 
 .intro-section {
