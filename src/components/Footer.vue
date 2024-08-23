@@ -67,18 +67,20 @@ export default {
 .footer-section {
   background-color: #289bb6;
   color: white;
-  padding: 40px 20px;
+  padding: 40px 0px;
   font-family: Arial, sans-serif;
-  width: 100vw;
+  width: 100%;
   text-align: left;
 }
 
 .footer-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 20px;
   margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 55px;
 }
 
 .footer-subscribe {
@@ -143,8 +145,6 @@ export default {
 
 .footer-column {
   flex: 1;
-  min-width: 150px;
-  margin-right: 30px;
 }
 
 .footer-column h3 {
@@ -216,6 +216,8 @@ export default {
 @media screen and (max-width: 768px) {
   .footer-content {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .footer-column {
@@ -224,7 +226,7 @@ export default {
 
   .footer-bottom {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     text-align: left;
   }
 }
@@ -234,5 +236,11 @@ export default {
 }
 .link {
   margin-left: 10px;
+}
+.footer-section {
+  margin: 0%;
+}
+.footer-column {
+  margin: 0%;
 }
 </style>

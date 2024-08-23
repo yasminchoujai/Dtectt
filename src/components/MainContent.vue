@@ -7,12 +7,17 @@
         solutions. From real-time beautification, reshaping, and makeup, to portrait separation, we
         understand your aesthetic.
       </p>
-      <button class="request-demo animate">
-        Request a demo<img src="../assets/arrow.png" class="arrow" />
-      </button>
+
+      <router-link to="/product" class="request">
+        <button class="request-demo animate">
+          Request a demo
+          <img src="../assets/arrow.png" class="arrow" />
+        </button>
+      </router-link>
+
       <div class="chart">
-        <p><span>10k+</span> <br />company used</p>
-        <p><span>100% </span><br />anti-spoofing</p>
+        <p><span>10k+</span> <br />companies used</p>
+        <p><span>100%</span><br />anti-spoofing</p>
       </div>
     </div>
     <div class="image-content">
@@ -42,7 +47,7 @@ export default {
             elements.forEach((element, index) => {
               setTimeout(() => {
                 element.classList.add('animate-in')
-              }, index * 300) // delay each element by 300ms
+              }, index * 300)
             })
             observer.unobserve(entry.target)
           }
@@ -61,13 +66,17 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin: 0;
+  padding: 20px;
+  height: 80vh;
   text-align: left;
+  background: #289bb6;
 }
 
 .text-content {
   max-width: 500px;
-  margin-left: 80px;
+  margin-left: 40px;
+  margin-top: 70px;
 }
 
 .text-content h1,
@@ -88,18 +97,15 @@ export default {
 }
 
 .text-content h1 {
-  font-size: 60px;
-  margin-bottom: 20px;
-  font-family: 'orbitron', sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+  font-size: 49px;
+  margin-bottom: 50px;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .text-content p {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.5;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 50px;
   font-weight: 300;
 }
 
@@ -112,11 +118,12 @@ export default {
   cursor: pointer;
   font-size: 15px;
   border-radius: 20px;
-  margin-top: 60px;
+  margin-top: 40px;
   text-decoration: none;
   display: flex;
-  align-items: center; /* Aligns items (image and text) vertically in the center */
+  align-items: center;
   justify-content: space-between;
+  text-decoration: none;
 }
 
 .request-demo:hover {
@@ -126,9 +133,10 @@ export default {
 
 .chart {
   display: flex;
-  width: 100%;
+  gap: 30px;
   font-size: medium;
   color: white;
+  margin-top: 40px;
 }
 
 span {
@@ -140,13 +148,17 @@ span {
 }
 
 .theface {
-  height: 78vh;
-  margin-top: 78px;
+  height: 75vh;
+  margin-top: 70px;
 }
+
 .arrow {
   border-radius: 100px;
   height: 30px;
   width: 30px;
   margin-left: 10px;
+}
+.request {
+  text-decoration: none;
 }
 </style>

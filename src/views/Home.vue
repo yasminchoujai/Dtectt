@@ -82,11 +82,8 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background: #289bb6;
-  height: 100vh;
-  margin: 0%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  height: 100%;
+  width: 100%;
 }
 
 .back-to-top {
